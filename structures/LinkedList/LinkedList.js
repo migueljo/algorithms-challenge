@@ -43,14 +43,6 @@ class LinkedList {
     this.size--
   }
 
-  removeItem() {
-
-  }
-
-  get() {
-
-  }
-
   isEmpty() {
     return this.size === 0
   }

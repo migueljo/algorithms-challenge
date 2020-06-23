@@ -49,4 +49,22 @@ describe("remove method", () => {
     expect(ll.tail).toBe(null)
     expect(ll.size).toBe(0)
   })
+
+  test('the list should be empty after remove the last item', () => {
+    const ll = new LinkedList()
+    ll.add("alberto")
+    ll.remove()
+    expect(ll.size).toBe(0)
+    expect(ll.head).toBe(null)
+    expect(ll.tail).toBe(null)
+  })
+
+  test("should remove the last item", () => {
+    const ll = new LinkedList()
+    ll.add("alberto")
+    ll.add("andres")
+    ll.add("carolina")
+    ll.remove()
+    expect(ll.size).toBe(2)
+  })
 })
